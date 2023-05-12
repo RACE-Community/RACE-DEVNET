@@ -267,7 +267,7 @@ func (c *Config) Description(l2Chains map[string]string) string {
 		networkL2 = l2Chains[c.L2ChainID.String()]
 	}
 	if networkL2 == "" {
-		networkL2 = "unknown L2"
+		networkL2 = "RACE DEVNET"
 	}
 	networkL1 := params.NetworkNames[c.L1ChainID.String()]
 	if networkL1 == "" {
@@ -296,7 +296,7 @@ func (c *Config) LogDescription(log log.Logger, l2Chains map[string]string) {
 		networkL2 = l2Chains[c.L2ChainID.String()]
 	}
 	if networkL2 == "" {
-		networkL2 = "unknown L2"
+		networkL2 = "RACE DEVNET"
 	}
 	networkL1 := params.NetworkNames[c.L1ChainID.String()]
 	if networkL1 == "" {
