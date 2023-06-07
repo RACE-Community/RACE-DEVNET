@@ -1,14 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.15;
 
-import { OptimismMintableERC721 } from "./OptimismMintableERC721.sol";
+import { RACEERC721 } from "./RACEMintableERC721.sol";
 import { Semver } from "./Semver.sol";
 
-/**
- * @title OptimismMintableERC721Factory
- * @notice Factory contract for creating OptimismMintableERC721 contracts.
+
  */
-contract OptimismMintableERC721Factory is Semver {
+contract RACEMintableERC721Factory is Semver {
     /**
      * @notice Address of the ERC721 bridge on this network.
      */
@@ -25,7 +23,6 @@ contract OptimismMintableERC721Factory is Semver {
     mapping(address => bool) public isOptimismMintableERC721;
 
     /**
-     * @notice Emitted whenever a new OptimismMintableERC721 contract is created.
      *
      * @param localToken  Address of the token on the this domain.
      * @param remoteToken Address of the token on the remote domain.
